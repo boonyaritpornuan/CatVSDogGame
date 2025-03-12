@@ -1,0 +1,22 @@
+#gameCanvas {
+    background-color: var(--bs-dark);
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+
+.game-controls {
+    background-color: var(--bs-gray-800);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.form-range::-webkit-slider-thumb {
+    background: var(--bs-primary);
+}
+
+.form-range::-moz-range-thumb {
+    background: var(--bs-primary);
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+<head>
+    <title>Cat vs Dog Throwing Game</title>
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="text-center mb-4">Cat vs Dog Throwing Game</h1>
+
+                <!-- Character Selection -->
+                <div id="character-select" class="text-center mb-4">
+                    <h2>Select Your Character</h2>
+                    <div class="btn-group">
+                        <button class="btn btn-lg btn-outline-primary" onclick="selectCharacter('cat')">Cat</button>
+                        <button class="btn btn-lg btn-outline-primary" onclick="selectCharacter('dog')">Dog</button>
+                    </div>
+                </div>
+
+                <!-- Game Instructions -->
+                <div class="alert alert-info text-center mb-4">
+                    คลิกที่ตัวละครแล้วลากเมาส์เพื่อกำหนดทิศทางและความแรงในการขว้าง
+                </div>
+
+                <!-- Game Canvas -->
+                <canvas id="gameCanvas" width="800" height="400" class="border rounded"></canvas>
+
+                <!-- Score Display -->
+                <div id="score-display" class="mt-4">
+                    <h3>Score</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <p>Player 1: <span id="p1-score">0</span></p>
+                        </div>
+                        <div class="col-6">
+                            <p>Player 2: <span id="p2-score">0</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/assets/characters.js"></script>
+    <script src="/static/js/physics.js"></script>
+    <script src="/static/js/game.js"></script>
+</body>
+</html>
